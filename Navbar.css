@@ -1,0 +1,83 @@
+*{
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+#catagories{
+    font-size:1rem;
+    height:100%;
+    vertical-align: baseline;
+    padding-top:25px;
+    width:auto;
+    border:none;
+    background-color: white;
+}
+/* Search Area */
+.search_logo{
+    position:relative;
+    top:-37px;
+    left:15px;
+
+}
+.Search_head input{
+    height:48px;
+    border:black solid 2px;
+    border-radius: 40px;
+    padding-left: 40px;
+    background-color:rgb(241, 241, 241);
+    width: 100%;
+}
+.Search_head form{
+    transform:translateY(18%);
+}
+.Search_head{
+    width:47%;
+    overflow:hidden; 
+}
+/* .Search_head input[placeholder]{
+
+} */
+nav{
+    /* background-color: black; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-links{
+    /* color:white; */
+    margin:0px;
+    padding:5px;
+    font-size: 1rem;
+    
+}
+.nav_account{
+    margin:5px;
+    font-size: 30px;
+}
+.logo img{
+    height: 69px;
+    width: 130px;
+}
+#right{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border:red solid 1px; */
+    width:200px;
+    font-size: 30px;
+    margin:0px 0px 0px 15px;
+}
+/* hover */
+.nav-links:hover,.course_types:hover,.catagory_course_list:hover,.development_items:hover,.business_items:hover{
+    color:blueviolet;
+}

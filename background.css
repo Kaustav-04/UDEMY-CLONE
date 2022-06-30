@@ -1,0 +1,87 @@
+*{
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+}
+/* #banner-area{
+    border:green solid 1px;
+} */
+#poster{
+    width:90%;
+    margin: 0vh 4.88vw;
+}
+ul{
+    list-style: none;
+    display:inline-flex;
+    /* border: red solid 1px; */
+    margin: 0px  auto;
+    /* overflow: hidden; */
+    padding-bottom: -3px;
+    transform: translateX(0vw);
+    
+
+}
+#poster-img{
+    height:55vh;
+    width:90vw;
+    animation: slide 5s infinite ease-in-out;
+    background-image: url("5cd0d275-7f38-4fa9-8bff-aa89f1cc35dd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.offer_promotion{
+    /* border:black solid 2px; */
+    overflow: hidden;
+    padding:25px;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 125px;
+    top:5%;
+    left:6%;
+    position: absolute;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08), 0 5px 12px rgb(0 0 0 / 8%);
+    border-radius: 16px;
+    z-index:1000;
+}
+.indicator{
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+
+    border:black solid 3px;
+    text-align: center;
+    display:inline-block;
+    margin:auto 2px;
+}
+#indicators{
+    display: block;
+    position: relative;
+    width:100%;
+    text-align: center;
+    margin:5px auto;
+    top:-37px;
+}
+.indicator:hover,.indicator:active{
+    background-color: black;
+}
+@keyframes slide{
+    0%{
+        background-image: url("5cd0d275-7f38-4fa9-8bff-aa89f1cc35dd.jpg");
+    }
+    /* 33%{
+        background-image: url("5cd0d275-7f38-4fa9-8bff-aa89f1cc35dd.jpg");
+    } */
+    34%{
+        background-image: url("898b2376-e5af-4dfe-b054-d99bab2dd0eb.jpg");
+    }
+    /* 66%{
+        background-image: url("898b2376-e5af-4dfe-b054-d99bab2dd0eb.jpg");
+    } */
+    67%{
+        background-image: url("e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg");
+    }
+    99%{
+        background-image: url("e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg");
+    }
+}
