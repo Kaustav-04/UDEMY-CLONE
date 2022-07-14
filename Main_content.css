@@ -1,0 +1,331 @@
+*{
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+    box-sizing: border-box;
+}
+#main_content{
+    margin-top: 50px;
+    /* border:red solid 1px; */
+    /* padding:0px 20px; */
+    margin:0 4.88vw;
+
+}
+#mainContent_MyLearning{
+    display:flex;
+    justify-content: space-between;
+    align-items:center ;
+    font-size: 2rem;
+    height: 55px;
+    margin:0px 20px;
+}
+#main_content_my_learning_link{
+    height: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:#5624d0;
+    text-decoration: none;
+    position: relative;
+}
+#main_content_my_learning_link::after{
+    content: "";
+    height: 3px;
+    width:100%;
+    background-color: #5624d0;
+    position: absolute;
+    bottom: 0px;
+    left:-5px;
+}
+/* Video cards area */
+#My_learning_cards_area{
+    margin:0px 20px;
+    margin-top:30px;
+    width:100%;
+    position: relative;
+}
+.My_learning_video_card{
+    margin-top: 5px;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    border:#d1d7dc solid 1px;
+    width:400px;
+    height:150px;
+    display: flex;
+}
+.My_learning_video{
+    width:30%;
+    background-color: rgb(196, 151, 237);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+.My_learning_video_desc{
+    width:70%;
+    padding:0px 0px 0px 15px;
+}
+.my_learning_course_name{
+    padding:10px 0px;
+    color:#6a6f73;
+    font-weight: 700;
+}
+.mylearning_topic{
+    color:#1c1d1f;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.topic_type_time{
+    position:absolute;
+    bottom:10px;
+    color:#555758;
+    font-weight: 900;
+}
+.topic_time{
+    color:#6e7071;
+    font-weight:600;
+}
+
+#whatToLearnNext{
+    width:100%;
+    margin-top: 3.8rem;
+}
+#whatToLearnNext h1{
+    margin:0px 20px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+#ourTopPick{
+    /* border:green solid 1px; */
+    margin:0px 20px;
+}
+#ourTopPick h2{
+    margin-bottom: 15px;
+}
+#pickCard{
+    width:100%;
+    height: 45vh;
+    min-height: 263px;
+    border:#b6b5b5 solid 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+}
+#pickCardPicture{
+    background-image: url(ourtoppick.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100%;
+    width:480px;
+}
+#pickCardDesc{
+    width: 45%;
+    height: 100%;
+    padding-left: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    align-items: flex-start;
+    position: relative;
+}
+#pickCardName{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+#pickCardText{
+    /* width:70%; */
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    color: rgb(97, 97, 97);
+}
+#pickCardAuthor{
+    color:gray;
+    line-height: 1.4rem;
+}
+#pickCardTime{
+    color: #44484a;
+}
+#pickCardDateStamp{
+    font-weight: 700;
+    color: black;
+}
+#pickCardRate{
+    margin-top: 10px;
+}
+#rateValue{
+    margin-right: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 0.8;
+    font-weight: 800;
+    color: rgb(223, 125, 46);
+}
+.rateStars i{
+    margin-right: 3px;
+    color: rgb(237, 201, 0);
+}
+#noOfRating{
+    margin-left: 10px;;
+}
+#pickCardPrice{
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0px;
+}
+#pickCardPrice i{
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: relative;
+}
+#pickCardPrice span:nth-child(2) i{
+    font-weight: 400;
+    color: #6a6f73;
+}
+#pickCardPrice span:nth-child(2)::after{
+    content: "";
+    background-color: #6a6f73;
+    width:50%;
+    height: 2px;
+    position: absolute;
+    bottom:12px;
+    right:1px;
+}
+#recomended{
+    width:100%;
+    margin-top: 35px;
+    position: relative;
+}
+#recomended h2{
+    margin:0px 20px;
+}
+#recomended_carausel_container{
+    width:100%;
+    position: relative;
+}
+#leftArrow, #rightArrow{
+    position: absolute;
+    top:20%;
+    width:50px;
+    height:50px;
+    background-color: #393b3f;
+    border-radius: 50%;
+    z-index: 700;
+    
+}
+#rightArrow{
+    right:0px;
+}
+#leftArrow{
+    left:0px;
+    display: none;
+}
+#leftArrow i, #rightArrow i{
+    color: white;
+    font-size: 2rem;
+}
+#rightArrow i{
+    margin: 0px;
+}
+#recomended_carausel{
+    /* border:red solid 1px; */
+    width:97.07%;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    min-height: 305px;
+    /* min-width: 100%; */
+    overflow: hidden;
+    /* overflow-x: scroll; */
+
+}
+#recomendedCardsArea{
+    height: 100%;
+    /* border:green solid 1px; */
+    /* height:50vh; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    position: absolute;
+}
+.recomendedCards{
+    /* border:black solid 1px; */
+    margin-right: 25px;
+    /* min-height: 305px; */
+    height: 100%;
+    width:250px;
+    overflow: hidden;
+    position: relative;
+}
+/* .recomendedCardsPic{
+    background-image: url(recomendedCards-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 48%;
+    width:100%;
+} */
+.recomendedCardsPic img{
+    width: 250px;
+    height: 135px;
+    overflow-y: hidden;
+}
+.recomendedCardsDesc{
+    margin-top: 8px;
+    width:100%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+.recomendedCardsName{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.recomendedCardsAuthor{
+    margin-top: 3px;
+    height: 20px;
+    overflow: hidden;
+    color: #6e7071;
+}
+.recomendedCardsRate{
+    margin-top: 4px;
+    width:80%;
+    display: flex;
+    align-items: center;
+}
+.recomendedCardsRate span{
+    margin-right: 5px;
+}
+.recomendedCardsRateValue{
+    margin-right: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 0.8;
+    font-weight: 800;
+    color: rgb(223, 125, 46);
+}
+.recomendedCardsRateStars i{
+    margin-right: 3px;
+    color: rgb(237, 201, 0);
+    vertical-align: middle;
+}
+.recomendedCardsPrice{
+    margin-top: 8px;
+}
+.recomendedCardsPrice i{
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+.recomendedCardsBestseller{
+    /* margin-top:10px; */
+    background-color: #eceb98;
+    font-weight: 600;
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+}

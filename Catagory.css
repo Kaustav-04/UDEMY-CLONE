@@ -1,0 +1,161 @@
+*{
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+    box-sizing: border-box;
+}
+
+#catagory_course_list{
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    border:rgb(204, 204, 204) solid 1px;
+    z-index:2000;
+    top:71px;
+    left:120px;
+    width:220px;
+    height:600px;
+    background-color:white;
+    align-items: flex-start;
+    padding:10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08), 0 5px 12px rgb(0 0 0 / 8%);
+}
+.catagory_items{
+    margin:10px 0px;
+}
+.catagory_sub_list{
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    top:0px;
+    left:200px;
+    height:100%;
+    width:500px;
+    border-left:rgb(204, 204, 204) solid 1px;
+    overflow: hidden;
+    margin-left:10px;
+    padding:10px;
+    height:100%;
+    overflow: hidden;
+    margin-left:10px;
+    padding:10px;
+    /* background-color: aqua; */
+
+}
+.sub_Devlopment_list,.sub_Business_list{
+    display:none;
+    flex-direction:column;
+    position: absolute;
+    top:0px;
+    left:275px;
+    padding:10px;
+    margin-left:10px;
+    height:100%;
+    border-left:rgb(204, 204, 204) solid 1px;
+    color:black;
+}
+.catagory_sub_list li{
+    display: flex;
+    margin:10px 0px;
+}
+.submenu-1_text, .submenu-2_text, .submenu-3_text{
+    display:flex;
+    width:200px;
+    justify-content: space-between;
+    align-items:center;
+}
+.submenu-2_text{
+    width:275px;
+}
+.catagory_sub_list li ul li:first-child{
+    color:#6a6f73;
+    font-weight: bolder;
+}
+/* Hover Area */
+#catagories:hover #catagory_course_list{
+    display: flex;
+    width:710px;
+}
+#Development:hover #development_list{
+    display:flex;
+}
+#business:hover #business_list{
+    display:flex;
+}
+#Finance:hover #finance_list{
+    display: flex;
+}
+#IT:hover #IT_list{
+    display:flex;
+}
+#Office:hover #Office_list{
+    display:flex;
+}
+#Personal:hover #personal_list{
+    display:flex;
+}
+#Design:hover #design_list{
+    display:flex;
+}
+#Marketing:hover #marketing_list{
+    display: flex;
+}
+#Lifestyle:hover #lifestyle_list{
+    display: flex;
+}
+#Photography:hover #photo_list{
+    display: flex;
+}
+#Health:hover #health_list{
+    display: flex;
+}
+#Music:hover #music_list{
+    display: flex;
+}
+#Teaching:hover #teaching_list{
+    display: flex;
+}
+#webdev:hover #webdev_list{display: flex;}
+#dataSc:hover #dataSc_list{display:flex;}
+#Mobdev:hover #Mobdev_list{display:flex;}
+#progLang:hover #progLang_list{display:flex;}
+#gameDev:hover #gameDev_list{display:flex;}
+#dataBase:hover #dataBase_list{display:flex;}
+#softTest:hover #softTest_list{display:flex;}
+#softEng:hover #softEng_list{display:flex;}
+#softDevTools:hover #softDevTools_list{display:flex;}
+#no-codeDev:hover #no-codeDev_list{display:flex;}
+
+#Entrepreneur:hover #Entrepreneur_list{display: flex;}
+#Communication:hover #communication_list{display:flex;}
+#Management:hover #management_list{display: flex;}
+#Sales:hover #sales_list{display:flex;}
+#busStrategy:hover #busStrategy_list{display:flex;}
+#Operations:hover #operations_list{display:flex;}
+#projManage:hover #projManage_list{display: flex;}
+#Busi_law:hover #Busi_law_list{display: flex;}
+#Busi_analytics:hover #Busi_analytics_list{display: flex;}
+#humanResource:hover #humanResource_list{display:flex;}
+#Industry:hover #Industry_list{display:flex;}
+#e-commerce:hover #e-commerce_list{display:flex;}
+#media:hover #media_list{display:flex;}
+#realEstate:hover #realEstate_list{display:flex;}
+#othBusiness:hover #othBusiness_list{display:flex;}
+
+
+#catagories:hover #catagories_txt{
+    color:blueviolet;
+} 
+.catagory_items:hover .submenu-1_text{
+    color: blueviolet;
+}
+.catagory_sub_list li:hover .submenu-2_text{
+    color:blueviolet;
+}
+.catagory_sub_list li ul li:hover .submenu-3_text{
+    color:blueviolet;
+}
+.catagory_sub_list li ul li:first-child .submenu-3_text{
+    color:#6a6f73;
+}
