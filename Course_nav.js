@@ -1,23 +1,25 @@
 let course_types=document.getElementsByClassName("course_types");
+let course = document.querySelector("course");
 let course_type=document.getElementsByClassName("course_type");
 let course_nav=document.getElementById("course_nav");
 
 let course_nav_links=document.getElementById("course_nav_links");
 
-for(i=0;i<Array.from(course_types).length;i++){
-    course_types[i].addEventListener("mouseenter",func1);
-    course_types[i].addEventListener("mouseleave",func2);
-}
+// for(i=0;i<Array.from(course_types).length;i++){
+//     course_types[i].addEventListener("mouseenter",func1);
+//     course_types[i].addEventListener("mouseleave",func2);
+// }
 
 function func1(){
-    course_nav_links.style.display = "block";
+    course_nav_links.style.visibility = "visible";
     course_nav.style.paddingTop = "9px";
 }
 function func2(){
-    course_nav_links.style.display = "none";
+    course_nav_links.style.visibility = "hidden";
     course_nav.style.paddingTop = "0px";
 
 }
+
 
 let course_types_dev=document.getElementById("course_types_dev");
 let course_types_busi=document.getElementById("course_types_busi");

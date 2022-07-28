@@ -352,7 +352,7 @@
         </div>
     </div>
     <hr style="color:rgb(165, 164, 164); width:100%;">
-    <div class="course">
+    <div class="course" onmouseenter="func1()" onmouseleave="func2()">
         <ul id="course_nav" >
             <li class="course_types" id="course_types_dev">Development<div class="triangle" id="triangle-1"></div></li>
             <li class="course_types" id="course_types_busi">Business<div class="triangle" id="triangle-2"></div></li>
@@ -365,86 +365,88 @@
             <li class="course_types" id="course_types_health">Health & Fitness<div class="triangle" id="triangle-9"></div></li>
             <li class="course_types" id="course_types_mus">Music<div class="triangle" id="triangle-10"></div></li>
         </ul>
+        <hr id="hr2"style="color:rgb(165, 164, 164); width:100%;height:0.5px;">
+        <div id="course_nav_links">
+            <div class="course_type" id="course_dev">
+                <div class="course_list_dev">Web Development</div>
+                <div class="course_list_dev">Mobile Development</div>
+                <div class="course_list_dev">Programming Languages</div>
+                <div class="course_list_dev">Game Development</div>
+                <div class="course_list_dev">Database Design & Development</div>
+                <div class="course_list_dev">Software Testing</div>
+            </div>
+            <div class="course_type" id="course_bus">
+                <div class="course_list_bus">Entrepreneurship</div>
+                <div class="course_list_bus">Communication</div>
+                <div class="course_list_bus">Management</div>
+                <div class="course_list_bus">Sales</div>
+                <div class="course_list_bus">Business Strategy</div>
+            </div>
+            <div class="course_type" id="course_fin">
+                <div class="course_list_fin">Accounting & Bookkeeping</div>
+                <div class="course_list_fin">Cryptocurrency & Blockchain</div>
+                <div class="course_list_fin">Finance</div>
+                <div class="course_list_fin">Financial Modelling & Analysis</div>
+                <div class="course_list_fin">Investing & Trading</div>
+            </div>
+            <div class="course_type" id="course_it">
+                <div class="course_list_it">IT Certifications</div>
+                <div class="course_list_it">Network & Security</div>
+                <div class="course_list_it">Hardware</div>
+                <div class="course_list_it">Operating Systems & servers</div>
+                <div class="course_list_it">Other It & Softwares</div>
+            </div>
+            <div class="course_type" id="course_office">
+                <div class="course_list_office">Microsoft</div>
+                <div class="course_list_office">Apple</div>
+                <div class="course_list_office">Google</div>
+                <div class="course_list_office">SAP</div>
+                <div class="course_list_office">Oracle</div>
+                <div class="course_list_office">Other Office Productivity</div>
+            </div>
+            <div class="course_type" id="course_per">
+                <div class="course_list_per">Personal Transformation</div>
+                <div class="course_list_per">Personal Productivity</div>
+                <div class="course_list_per">Leadership</div>
+                <div class="course_list_per">Carrer Development</div>
+                <div class="course_list_per">Parenting & Relationships</div>
+            </div>
+            <div class="course_type" id="course_des">
+                <div class="course_list_des">Web Design</div>
+                <div class="course_list_des">Graphic Design & Illustrations</div>
+                <div class="course_list_des">Design Tools</div>
+                <div class="course_list_des">User Experience & Design</div>
+                <div class="course_list_des">Game Design</div>
+                <div class="course_list_des">3D & Animation</div>
+            </div>
+            <div class="course_type" id="course_mar">
+                <div class="course_list_mar">Digital Marketing</div>
+                <div class="course_list_mar">Search engine Optimisation</div>
+                <div class="course_list_mar">Social Media Marketing</div>
+                <div class="course_list_mar">Branding</div>
+                <div class="course_list_mar">MArketing Fundamentals</div>
+                <div class="course_list_mar">Marketing Analytics & Automation</div>
+            </div>
+            <div class="course_type" id="course_health">
+                <div class="course_list_health">Fitness</div>
+                <div class="course_list_health">General Health</div>
+                <div class="course_list_health">Sports</div>
+                <div class="course_list_health">Nutrition & Diet</div>
+                <div class="course_list_health">Yoga</div>
+                <div class="course_list_health">Mental Health</div>
+            </div>
+            <div class="course_type" id="course_music">
+                <div class="course_list_music">Instruments</div>
+                <div class="course_list_music">Music Production</div>
+                <div class="course_list_music">Vocal</div>
+                <div class="course_list_music">Music Techniques</div>
+                <div class="course_list_music">Music Softwares</div>
+            </div>
+        </div>
     </div>
-    <hr id="hr2"style="color:rgb(165, 164, 164); width:100%;height:0.5px;">
+    
     <!-- couse-nav-links-->
-    <div id="course_nav_links">
-        <div class="course_type" id="course_dev">
-            <div class="course_list_dev">Web Development</div>
-            <div class="course_list_dev">Mobile Development</div>
-            <div class="course_list_dev">Programming Languages</div>
-            <div class="course_list_dev">Game Development</div>
-            <div class="course_list_dev">Database Design & Development</div>
-            <div class="course_list_dev">Software Testing</div>
-        </div>
-        <div class="course_type" id="course_bus">
-            <div class="course_list_bus">Entrepreneurship</div>
-            <div class="course_list_bus">Communication</div>
-            <div class="course_list_bus">Management</div>
-            <div class="course_list_bus">Sales</div>
-            <div class="course_list_bus">Business Strategy</div>
-        </div>
-        <div class="course_type" id="course_fin">
-            <div class="course_list_fin">Accounting & Bookkeeping</div>
-            <div class="course_list_fin">Cryptocurrency & Blockchain</div>
-            <div class="course_list_fin">Finance</div>
-            <div class="course_list_fin">Financial Modelling & Analysis</div>
-            <div class="course_list_fin">Investing & Trading</div>
-        </div>
-        <div class="course_type" id="course_it">
-            <div class="course_list_it">IT Certifications</div>
-            <div class="course_list_it">Network & Security</div>
-            <div class="course_list_it">Hardware</div>
-            <div class="course_list_it">Operating Systems & servers</div>
-            <div class="course_list_it">Other It & Softwares</div>
-        </div>
-        <div class="course_type" id="course_office">
-            <div class="course_list_office">Microsoft</div>
-            <div class="course_list_office">Apple</div>
-            <div class="course_list_office">Google</div>
-            <div class="course_list_office">SAP</div>
-            <div class="course_list_office">Oracle</div>
-            <div class="course_list_office">Other Office Productivity</div>
-        </div>
-        <div class="course_type" id="course_per">
-            <div class="course_list_per">Personal Transformation</div>
-            <div class="course_list_per">Personal Productivity</div>
-            <div class="course_list_per">Leadership</div>
-            <div class="course_list_per">Carrer Development</div>
-            <div class="course_list_per">Parenting & Relationships</div>
-        </div>
-        <div class="course_type" id="course_des">
-            <div class="course_list_des">Web Design</div>
-            <div class="course_list_des">Graphic Design & Illustrations</div>
-            <div class="course_list_des">Design Tools</div>
-            <div class="course_list_des">User Experience & Design</div>
-            <div class="course_list_des">Game Design</div>
-            <div class="course_list_des">3D & Animation</div>
-        </div>
-        <div class="course_type" id="course_mar">
-            <div class="course_list_mar">Digital Marketing</div>
-            <div class="course_list_mar">Search engine Optimisation</div>
-            <div class="course_list_mar">Social Media Marketing</div>
-            <div class="course_list_mar">Branding</div>
-            <div class="course_list_mar">MArketing Fundamentals</div>
-            <div class="course_list_mar">Marketing Analytics & Automation</div>
-        </div>
-        <div class="course_type" id="course_health">
-            <div class="course_list_health">Fitness</div>
-            <div class="course_list_health">General Health</div>
-            <div class="course_list_health">Sports</div>
-            <div class="course_list_health">Nutrition & Diet</div>
-            <div class="course_list_health">Yoga</div>
-            <div class="course_list_health">Mental Health</div>
-        </div>
-        <div class="course_type" id="course_music">
-            <div class="course_list_music">Instruments</div>
-            <div class="course_list_music">Music Production</div>
-            <div class="course_list_music">Vocal</div>
-            <div class="course_list_music">Music Techniques</div>
-            <div class="course_list_music">Music Softwares</div>
-        </div>
-    </div>
+    
     <!--couse-nav-links-->
     <!-- background image -->
     <div id="banner-area">
